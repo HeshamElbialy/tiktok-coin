@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok</title>
+    <!-- Main Template Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" 
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="image">
+          <img src="assets/download.png" alt="" />
+        </div>
+        <div class="search">
+          <form action="">
+            <input
+              class="input"
+              type="text"
+              placeholder="Search accounts and videos" data-i18n="placeholder"
+            />
+            <i id="icon" class=" fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="cta">
+          <button data-i18n="upload"> <i class="plus fa-solid fa-plus"></i> Upload</button>
+          <a href="login.html"><button class="red" data-i18n="login">Log in</button></a>
+          <!-- <i id="vert" class=" fa-solid fa-ellipsis-vertical"></i> -->
+          <select>
+            <option value="en" data-i18n="english">English</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <h2 data-i18n="getcoins">Get Coins</h2>
+      <div class="log">
+        <img src="assets/user.jpg" alt="" />
+        <a href="login.html" data-i18n="login"><h4>Log in</h4></a>
+      </div>
+      <h3 data-i18n="recharge">Recharge</h3>
+      <div class="list">
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>70</h3>
+          </div>
+          <h4>EGP 20.49</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>350</h3>
+          </div>
+          <h4>EGP 102.39</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>700</h3>
+          </div>
+          <h4>EGP 204.75</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>1,400</h3>
+          </div>
+          <h4>EGP 409.45</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>3,500</h3>
+          </div>
+          <h4>EGP 1,024</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>7,000</h3>
+          </div>
+          <h4>EGP 2,048</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3>17,500</h3>
+          </div>
+          <h4>EGP 5,119</h4>
+        </div>
+        <div class="box">
+          <div class="sm-box">
+            <img src="assets/download.jpg" alt="">
+            <h3 data-i18n="custom">Custom</h3>
+          </div>
+          <h4 data-i18n="Largeamountsupported">Large amount supported</h4>
+        </div>
+      </div>
+      <h4 data-i18n="total">Total EGP 0</h4>
+      <a href="payment.html"><button data-i18n="recharge">Recharge</button></a>
+    </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

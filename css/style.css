@@ -1,0 +1,632 @@
+/* Start Variables */
+:root {
+  --main-color: #fe2c55;
+}
+/* End Variables */
+
+/* Start Global rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER STYLE */
+
+header {
+  display: grid;
+  place-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #a6a7ab;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+  background: white;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 14rem;
+}
+
+.header .image {
+  max-width: 100%;
+  display: block;
+}
+
+.header .image img {
+  width: 118px;
+  overflow: hidden;
+  display: block;
+}
+
+.header .search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header .search form i {
+  position: absolute;
+  right: 20px;
+  color: #a6a7ab;
+}
+
+.header .search form input[type="text"] {
+  width: 350px;
+  height: 45px;
+  flex: 1;
+  border-radius: 50px;
+  outline: none;
+  border-color: transparent;
+  background: rgba(22, 24, 35, 0.06);
+  border: none;
+  padding: 15px;
+}
+
+.header .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .cta button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  width: 137px;
+  height: 36px;
+  margin-right: 10px;
+  font-weight: bold;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+}
+
+.header .cta button .plus {
+  margin: 5px;
+  display: block;
+}
+
+.header .cta .red {
+  background-color: var(--main-color);
+  color: white;
+  width: 137px;
+}
+
+.header .cta select {
+  margin-left: 10px;
+  width: 20px;
+  height: 15px;
+}
+
+.section {
+  padding: 10rem;
+  padding-top: 3rem;
+  margin-left: 7rem;
+}
+
+.section .log {
+  display: flex;
+  align-items: center;
+  background: rgba(22, 24, 35, 0.03);
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 16px;
+  min-width: 255px;
+  width: max-content;
+  height: 76px;
+}
+
+.section .log img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.section .log h4 {
+  text-align: center;
+}
+
+.section a {
+  text-decoration: none;
+  color: rgba(22, 24, 35, 1);
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.section h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  display: inline-block;
+  color: rgb(22, 24, 35);
+  vertical-align: middle;
+  margin-left: 8px;
+  margin-right: 0px;
+  font-weight: 700;
+}
+
+.section .list {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.section .box {
+  min-height: 96px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 18px 2px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  user-select: none;
+  cursor: pointer;
+  pointer-events: initial;
+  opacity: 1;
+  background-image: initial;
+  background-repeat: no-repeat;
+  background-position: left bottom -1px;
+}
+
+.section .box:focus {
+  outline: 2px solid #face15;
+}
+
+.section .box img {
+  width: 30px;
+  height: 30px;
+}
+
+.section .box .sm-box {
+  display: flex;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.section .box h4 {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(22, 24, 35, 0.5);
+  text-align: center;
+  line-height: 1.1;
+  margin-top: -8px;
+}
+
+.section button {
+  border-radius: 4px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(254, 44, 85);
+  min-height: 36px;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 6px 8px;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 0px;
+  min-width: 100px;
+  width: 200px;
+  height: 46px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header .container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .section .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-left: 3rem;
+  }
+  .header .cta .red {
+    margin-right: 0;
+  }
+  .header .cta button {
+    font-size: 14px;
+    width: 100px;
+  }
+  .header .cta .red {
+    font-size: 14px;
+    width: 100px;
+  }
+  .header .search form input[type="text"] {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: fit-content;
+  }
+  header .container {
+    width: 100%;
+  }
+  .header .image img {
+    width: 100px;
+  }
+  .section .list {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .section {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .header .cta .red {
+    margin-right: 0;
+  }
+  .header .cta button {
+    font-size: 14px;
+    width: 100px;
+  }
+  .header .cta .red {
+    font-size: 14px;
+    width: 100px;
+  }
+  .header .search form input[type="text"] {
+    display: none;
+  }
+  .header .search form i {
+    display: none;
+  }
+}
+
+/* LOG IN STYLE */
+
+.login-page {
+  padding: 8rem auto;
+  margin: auto;
+  overflow: auto;
+  flex: 1 1 0%;
+  position: relative;
+}
+
+.login-page .container {
+  width: fit-content;
+}
+
+.login-page .login {
+  text-align: center;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.login-page ul li {
+  color: rgb(22, 24, 35);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  font-size: 15px;
+  padding: 0px 12px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 44px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 16px;
+  word-break: keep-all;
+  white-space: nowrap;
+  background: rgb(255, 255, 255);
+}
+
+.login-page ul li i,
+.login-page ul li img {
+  width: 25px;
+  display: block;
+  text-align: left;
+  position: absolute;
+  left: 15px;
+}
+
+.login-page ul li a {
+  padding: 20px;
+  padding-left: 70px;
+  font-size: 15px;
+  color: #000000;
+}
+
+.login-page p {
+  color: rgb(22, 24, 35);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  height: 64px;
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.login-page p a {
+  color: var(--main-color);
+}
+
+/* @media screen and (max-width: 1024px) {
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-page h2 {
+    font-size: 30px;
+  }
+  .login-page ul li {
+    width: 300px;
+  }
+  .login-page p {
+    width: 100%;
+  }
+  .login-page ul li a {
+    padding-left: 60px;
+  }
+}
+
+/* SIGN UP STYLE */
+
+.sign-page {
+  padding: 8rem auto;
+  margin: auto;
+  overflow: auto;
+  flex: 1 1 0%;
+  position: relative;
+}
+
+.sign-page .container {
+  width: fit-content;
+}
+
+.sign-page h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sign-page ul li {
+  color: rgb(22, 24, 35);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  font-size: 15px;
+  padding: 0px 12px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 44px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 16px;
+  word-break: keep-all;
+  white-space: nowrap;
+  background: rgb(255, 255, 255);
+}
+
+.sign-page ul li i,
+.sign-page ul li img {
+  width: 25px;
+  display: block;
+  text-align: left;
+  position: absolute;
+  left: 15px;
+}
+
+.sign-page ul li a {
+  padding: 20px;
+  padding-left: 70px;
+  font-size: 15px;
+  color: #000000;
+}
+
+.sign-page p {
+  color: rgb(22, 24, 35);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  height: 64px;
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.sign-page p a {
+  color: var(--main-color);
+  margin-left: 7px;
+}
+
+.sign-page ul .small {
+  color: rgba(22, 24, 35, 0.5);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  width: 375px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .sign-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-page h2 {
+    font-size: 30px;
+  }
+  .sign-page ul li {
+    width: 300px;
+  }
+  .sign-page p {
+    width: 100%;
+  }
+  .sign-page ul li a {
+    padding-left: 60px;
+  }
+}
+
+/* PAYMENT STYLE */
+
+section {
+  padding: 4rem;
+}
+
+section h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(22, 24, 35);
+  font-weight: 700;
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px -24px;
+  padding: 0px 24px 24px;
+  border-bottom: 0.5px solid rgba(22, 24, 35, 0.2);
+}
+
+section .account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .box .card h4 {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(22, 24, 35);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+}
+
+section .card .pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .card .pay .pays {
+  padding-right: 8px;
+}
+
+section .card .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+section .card .form div {
+  padding: 20px;
+}
+
+section .card .form span {
+  color: #4e5969;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+section .card .form input {
+  border: none;
+  outline: none;
+  margin-top: 14px;
+  background-color: #fdebe6;
+  width: 280px;
+  height: 45px;
+}
+
+section .card .form .warn {
+  color: #ef4b18;
+}
+
+section .card .form input::placeholder {
+  padding: 20px;
+}
+
+section p {
+  line-height: 1.5;
+  color: #8a9ba3;
+  padding: 10px;
+}
+
+section p span {
+  color: #000000;
+}
